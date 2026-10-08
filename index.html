@@ -1,189 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id=GTM-WN2B5ZCD';f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WN2B5ZCD');</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Global Motor Seguros - Consultoría Técnica en Flotas Corporativas y Placas Rojas.">
     <title>Global Motor Seguros | Ingeniería de Riesgos de Movilidad</title>
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    
     <style>
         :root {
-            --primary-navy: #0A1128;    
-            --logo-blue: #0056B3;        
-            --logo-blue-hover: #003D7A;   
-            --neutral-slate: #475569;     
-            --bg-light: #F8FAFC;         
+            --primary-navy: #0A1128;
+            --logo-blue: #0056B3;
+            --logo-blue-hover: #003D7A;
+            --neutral-slate: #475569;
+            --bg-light: #F8FAFC;
             --white: #FFFFFF;
             --font-display: 'Space Grotesk', sans-serif;
             --font-body: 'DM Sans', sans-serif;
         }
-
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        
-        body {
-            background-color: var(--bg-light);
-            font-family: var(--font-body);
-            color: var(--primary-navy);
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .container {
-            max-width: 1140px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-
-        /* --- CABECERA --- */
-        header {
-            background-color: var(--white);
-            border-bottom: 1px solid #E2E8F0;
-            padding: 22px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .nav-wrapper {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .brand-logo {
-            display: flex;
-            align-items: center;
-            font-family: var(--font-display);
-            font-weight: 700;
-        }
-        .brand-logo img {
-            height: 50px;
-            vertical-align: middle;
-            margin-right: 14px;
-        }
-        .brand-logo span {
-            color: var(--primary-navy);
-            font-weight: 700;
-            font-size: 20px;
-            letter-spacing: 0.5px;
-        }
-
-        /* --- PORTADA --- */
-        .hero {
-            padding: 120px 0;
-            background: linear-gradient(135deg, #FFFFFF 0%, #F1F5F9 100%);
-            text-align: center;
-        }
-        .hero-content {
-            max-width: 880px;
-            margin: 0 auto;
-        }
-        .tag-specialist {
-            display: inline-block;
-            background-color: rgba(0, 86, 179, 0.07);
-            color: var(--logo-blue);
-            padding: 8px 18px;
-            border-radius: 50px;
-            font-size: 13px;
-            font-weight: 700;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            margin-bottom: 28px;
-        }
-        .hero h1 {
-            font-family: var(--font-display);
-            font-size: 54px;
-            line-height: 1.15;
-            font-weight: 700;
-            margin-bottom: 26px;
-            color: var(--primary-navy);
-            letter-spacing: -1px;
-        }
-        .hero h1 span {
-            color: var(--logo-blue);
-        }
-        .hero p {
-            font-size: 21px;
-            color: var(--neutral-slate);
-            margin-bottom: 44px;
-            font-weight: 400;
-        }
-        
-        .btn-call {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 14px;
-            padding: 22px 50px;
-            background-color: var(--logo-blue);
-            color: var(--white);
-            border-radius: 8px;
-            font-family: var(--font-display);
-            font-weight: 700;
-            font-size: 18px;
-            text-decoration: none;
-            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-            box-shadow: 0 12px 24px rgba(0, 86, 179, 0.18);
-        }
-        .btn-call:hover {
-            background-color: var(--logo-blue-hover);
-            transform: translateY(-2px);
-            box-shadow: 0 16px 32px rgba(0, 86, 179, 0.25);
-        }
-
-        /* --- SECCIÓN SOLUCIONES --- */
-        .solutions {
-            padding: 100px 0;
-            background-color: var(--white);
-        }
-        .solutions-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 48px;
-        }
-        .sol-card {
-            padding: 45px;
-            border-radius: 16px;
-            background-color: var(--bg-light);
-            border: 1px solid #E2E8F0;
-            transition: border-color 0.3s;
-        }
-        .sol-card:hover {
-            border-color: #CBD5E1;
-        }
-        .sol-card i {
-            font-size: 32px;
-            color: var(--logo-blue);
-            margin-bottom: 24px;
-        }
-        .sol-card h3 {
-            font-family: var(--font-display);
-            font-size: 24px;
-            margin-bottom: 14px;
-            font-weight: 700;
-        }
-        .sol-card p {
-            color: var(--neutral-slate);
-            font-size: 16px;
-            line-height: 1.6;
-        }
-
-        /* --- TABLA --- */
-        .comparison { padding: 100px 0; background-color: var(--bg-light); }
-        .comparison h2 { font-family: var(--font-display); font-size: 38px; text-align: center; margin-bottom: 54px; font-weight: 700; letter-spacing: -0.5px; }
-        table { width: 100%; border-collapse: collapse; font-size: 16px; background-color: var(--white); border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(10, 10, 10, 0.1); }
+        body { font-family: var(--font-body); color: var(--neutral-slate); background-color: var(--bg-light); line-height: 1.6; }
+        header { background: var(--white); border-bottom: 1px solid #E2E8F0; padding: 20px 0; position: sticky; top: 0; z-index: 100; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: var(--font-display); font-size: 22px; font-weight: 700; color: var(--primary-navy); text-decoration: none; }
+        .logo span { color: var(--logo-blue); }
+        .contact-btn { background-color: var(--logo-blue); color: var(--white); padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 500; transition: background 0.3s; }
+        .contact-btn:hover { background-color: var(--logo-blue-hover); }
+        .hero { padding: 80px 0; background: linear-gradient(135deg, #FFFFFF 0%, #F1F5F9 100%); text-align: center; }
+        .hero h1 { font-family: var(--font-display); font-size: 42px; color: var(--primary-navy); margin-bottom: 20px; }
+        .hero p { font-size: 18px; max-width: 700px; margin: 0 auto 30px; }
+        .footer { text-align: center; padding: 40px 0; background: var(--primary-navy); color: var(--white); }
+        .footer a { color: #93C5FD; text-decoration: none; }
     </style>
 </head>
 <body>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WN2B5ZCD"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    </body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">Global Motor <span>Seguros</span></a>
+            <a href="mailto:direccion@globalmotorseguros.com" class="contact-btn">Contactar</a>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container" style="flex-direction: column;">
+            <h1>Ingeniería de Riesgos de Movilidad y Placas Rojas</h1>
+            <p>Soluciones profesionales y agilidad en B2B para flotas corporativas y sector asegurador.</p>
+            <a href="mailto:direccion@globalmotorseguros.com" class="contact-btn" style="font-size: 18px; padding: 14px 28px;">Solicitar Información</a>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2026 Global Motor Seguros. Todos los derechos reservados.</p>
+        <p style="margin-top: 10px;">Contacto directo: <a href="mailto:direccion@globalmotorseguros.com">direccion@globalmotorseguros.com</a></p>
+    </footer>
+</body>
 </html>
